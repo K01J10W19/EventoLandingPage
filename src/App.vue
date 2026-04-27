@@ -20,8 +20,8 @@
     <main class="max-w-[1920px] mx-auto w-full">
       <HeroSection />
       <EventInfo />
-      <!-- <CounterTime />
-      <AboutEvent />
+      <CounterTime />
+      <!-- <AboutEvent />
       <OurSpeakers />
       <PricingTable />
       <NextEvents />
