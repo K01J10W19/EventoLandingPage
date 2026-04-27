@@ -22,8 +22,8 @@
       <EventInfo />
       <CounterTime />
       <AboutEvent />
-      <!-- <OurSpeakers />
-      <PricingTable />
+      <OurSpeakers />
+      <!-- <PricingTable />
       <NextEvents />
       <OurPartners />
       <CallToAction />  -->
