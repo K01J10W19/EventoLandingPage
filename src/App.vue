@@ -21,8 +21,8 @@
       <HeroSection />
       <EventInfo />
       <CounterTime />
-      <!-- <AboutEvent />
-      <OurSpeakers />
+      <AboutEvent />
+      <!-- <OurSpeakers />
       <PricingTable />
       <NextEvents />
       <OurPartners />
