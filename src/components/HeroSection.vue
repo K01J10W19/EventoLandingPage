@@ -57,7 +57,7 @@
 </script>
 
 <template>
-    <section class="relative w-full min-h-[80vh] flex flex-col justify-center items-center overflow-hidden px-4 sm:px-8 py-32 xl:py-40">
+    <section class="relative w-full min-h-[650px] lg:min-h-[750px] flex flex-col justify-center items-center overflow-hidden px-4 sm:px-8 py-32 xl:py-40">
         
         <div class="absolute inset-0 z-0">
             <motion.img 
