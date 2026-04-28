@@ -26,9 +26,9 @@
       <PricingTable />
       <NextEvents />
       <OurPartners />
-      <!-- <CallToAction />  -->
+      <CallToAction /> 
     </main>
 
-    <!-- <FooterSection /> -->
+    <FooterSection />
   </div>
 </template>
