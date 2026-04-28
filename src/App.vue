@@ -24,9 +24,9 @@
       <AboutEvent />
       <OurSpeakers />
       <PricingTable />
-      <!-- <NextEvents />
+      <NextEvents />
       <OurPartners />
-      <CallToAction />  -->
+      <!-- <CallToAction />  -->
     </main>
 
     <!-- <FooterSection /> -->
