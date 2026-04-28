@@ -23,8 +23,8 @@
       <CounterTime />
       <AboutEvent />
       <OurSpeakers />
-      <!-- <PricingTable />
-      <NextEvents />
+      <PricingTable />
+      <!-- <NextEvents />
       <OurPartners />
       <CallToAction />  -->
     </main>
