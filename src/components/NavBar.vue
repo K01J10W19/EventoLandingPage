@@ -1,8 +1,9 @@
 <script setup>
-    import { ref } from 'vue';
+    import { ref, onMounted, onUnmounted } from 'vue';
     import { Search, Menu, X } from 'lucide-vue-next';
 
     const isMobileMenuOpen = ref(false);
+    const isScrolled = ref(false); // New reactive state for scroll detection
 
     const navLinks = [
         { name: 'Home', href: '#' },
@@ -15,10 +16,33 @@
     const toggleMenu = () => {
         isMobileMenuOpen.value = !isMobileMenuOpen.value;
     };
+
+    // Function to check scroll depth
+    const handleScroll = () => {
+        // If scrolled past 50 pixels, trigger the active state
+        isScrolled.value = window.scrollY > 50;
+    };
+
+    // Add and clean up the scroll event listener
+    onMounted(() => {
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initialize state on load
+    });
+
+    onUnmounted(() => {
+        window.removeEventListener('scroll', handleScroll);
+    });
 </script>
 
 <template>
-    <header class="absolute top-0 left-0 w-full z-50 py-6 sm:py-8 px-4 sm:px-8 xl:px-16">
+    <header 
+        :class="[
+            'fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out px-4 sm:px-8 xl:px-16',
+            isScrolled 
+                ? 'py-4 bg-base/95 backdrop-blur-md shadow-lg border-b border-surface/10' 
+                : 'py-6 sm:py-8 bg-transparent border-b border-transparent'
+        ]"
+    >
         <nav class="max-w-[1536px] mx-auto flex items-center justify-between">
         
             <div class="flex items-baseline relative z-50">
